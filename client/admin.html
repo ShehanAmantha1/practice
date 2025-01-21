@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReelHub Admin</title>
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/footer.css" rel="stylesheet" />
+    <link href="styles/bg.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b3a0a4ca9f.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section id="top">
+      <header class="header mb-3">
+        <div class="row d-flex align-items-center mt-0 pt-2 pb-2">
+          <div class="col-md-9">
+            <h1 class="mb-0">
+              <a class="logo-text" target="_self" href="home.html" style="color: #f39c12;">ReelHub</a>
+            </h1>
+          </div>
+          <div class="col-md-3">
+            <div class="prf-icon text-end pt-1 dropdown" style="display: flex; justify-content: end">
+              <span id="username" style="margin: 5px 25px 0px 0px; font-size: 22px; color: #333;"></span>
+              <a href="#" class="dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="prf-icon bx bx-user-circle fs-1" id="profileIcon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" id="navLinksList">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section id="center" class="center_home">
+      <div class="container py-4">
+        <h2>Welcome to the ReelHub Admin Panel</h2>
+        <p>Manage your movies, reviews, ratings, and user feedback from here. Below is an overview of your system:</p>
+
+        <!-- Dashboard Overview Section -->
+        <div class="row">
+          <!-- Rental Statistics -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Rental Statistics</h5>
+                <ul>
+                  <li>Total Rentals: <strong>5000</strong></li>
+                  <li>Total Revenue: <strong>$75,000</strong></li>
+                  <li>Most Popular Movie: <strong>John Wick</strong></li>
+                  <li>Rental Trends: <strong>Rising</strong></li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Detailed Stats</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Health -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">System Health</h5>
+                <ul>
+                  <li>Active Users: <strong>300</strong></li>
+                  <li>Database Status: <strong>Healthy</strong></li>
+                  <li>Uptime: <strong>99.9%</strong></li>
+                </ul>
+                <a href="#" class="btn btn-primary">Check System Health</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Activity -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">User Activity</h5>
+                <ul>
+                  <li>Active Users: <strong>120</strong></li>
+                  <li>New Registrations: <strong>50</strong></li>
+                  <li>Most Recent Rental: <strong>The Matrix</strong></li>
+                </ul>
+                <a href="#" class="btn btn-primary">View User Activity</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Management Sections -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Latest Movies</h5>
+            <p class="card-text">Add, update, or remove movies from the platform. View ratings, reviews, and statistics.</p>
+            <a href="#" class="btn btn-primary">Manage Movies</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">User Feedback</h5>
+            <p class="card-text">View user comments and feedback on movies. Respond to queries and address issues promptly.</p>
+            <a href="#" class="btn btn-primary">View Feedback</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div class="poweredBy">Powered by</div>
+        <div class="d-flex justify-content-center" style="height: 40px">
+          <img src="./assets/devgrade_logo_white.png" />
+          <img src="./assets/99xLogoT.png" style="margin-left: 30px" />
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./js/navigate.js"></script>
+</html>
