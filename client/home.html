@@ -22,10 +22,25 @@
     <section id="top">
       <header class="header mb-3">
         <div class="row d-flex align-items-center mt-0 pt-2 pb-2">
-          <div class="col-md-9">
+          <div class="col-md-6">
             <h1 class="mb-0">
-              <a class="logo-text" target="_self" href="home.html" >ReelHub</a>
+              <a class="logo-text" target="_self" href="home.html">ReelHub</a>
             </h1>
+          </div>
+          <div class="col-md-3">
+            <form class="search-bar" style="display: flex; justify-content: center;">
+              <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Search..." 
+                aria-label="Search" 
+                style="width: 100%; max-width: 300px; outline: none;" 
+                onfocus="this.style.boxShadow='none';"
+              />
+              <button type="submit" class="btn btn-primary" style="margin-left: 10px; background-color: red; border-color: red;">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
           </div>
           <div class="col-md-3">
             <div
@@ -57,35 +72,7 @@
       </header>
     </section>
 
-    <section id= "top" >
-      <div class="modern-search-bar">
-        <form id="movieSearchForm" class="search-form">
-          <input
-            type="text"
-            id="movieSearchInput"
-            class="search-input"
-            placeholder="Search for movies, actors, or directors..."
-            aria-label="Search movies"
-          />
-          <select id="genreFilter" class="genre-select">
-            <option value="" selected>All Genres</option>
-            <option value="action">Action</option>
-            <option value="comedy">Comedy</option>
-            <option value="drama">Drama</option>
-            <option value="thriller">Thriller</option>
-            <option value="sci-fi">Sci-Fi</option>
-          </select>
-          <button type="submit" class="search-btn">
-            <i class="fas fa-search"></i> Search
-          </button>
-        </form>
-      </div>
-      
-
-    
-    </section>
     <section id="center" class="center_home">
-      
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -124,8 +111,7 @@
           <div class="carousel-item">
             <img src="image2.jpg" class="d-block w-100" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
-              <h5>IMDb Rating</h5>
-              <p>7.6</p>
+              <h5>Movie Recommendations</h5>
             </div>
           </div>
           <div class="carousel-item">
@@ -156,9 +142,55 @@
         </button>
       </div>
     </section>
-    
 
-   
+    <section id="movie-recommendations" style="padding: 50px 50px 50px 50px; background-color: #f8f9fa;">
+      <h2 style="text-align: center; margin-bottom: 20px; padding: auto;" >Movie Recommendations</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div style="text-align: center;">
+          <img src="movie1.jpg" alt="Movie 1" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 1</h4>
+          <p></p>
+          <p>Short description about Movie 1.</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="movie2.jpg" alt="Movie 2" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 2</h4>
+          <p></p>
+          <p>Short description about Movie 2.</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="movie3.jpg" alt="Movie 3" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 3</h4>
+          <p></p>
+          <p>Short description about Movie 3.</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="movie4.jpg" alt="Movie 4" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 4</h4>
+          <p></p>
+          <p>Short description about Movie 4.</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="movie5.jpg" alt="Movie 5" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 5</h4>
+          <p></p>
+          <p>Short description about Movie 5.</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="movie6.jpg" alt="Movie 6" style="width: 100%; border-radius: 5px;">
+          <p></p>
+          <h4>Movie Title 6</h4>
+          <p></p>
+          <p>Short description about Movie 6.</p>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div>
           <div class="poweredBy">Powered by</div>
